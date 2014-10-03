@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+    <dl class="tabs" data-tab>
+      <dd class="active"><a href="#panel1" ui-sref="dashboard.one">One</a></dd>
+      <dd><a href="#panel2" ui-sref="dashboard.two">Two</a></dd>
+      <dd><a href="#panel3" ui-sref="dashboard.three">Three</a></dd>
+    </dl>
+<div class="tabs-content">
+  <div class="content active" id="panel1">
+    <div class="dashboard-view-container">
+            <div class="dashboard-ui-view" ui-view></div>
+        </div>
+  </div>
+  <div class="content" id="panel2">
+    <div class="dashboard-view-container">
+            <div class="dashboard-ui-view" ui-view></div>
+        </div>
+  </div>
+  <div class="content" id="panel3">
+    <div class="dashboard-view-container">
+            <div class="dashboard-ui-view" ui-view></div>
+        </div>
+  </div>
+</div>
+</div>

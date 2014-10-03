@@ -1,0 +1,19 @@
+<h2>Second Dashboard View</h2>
+<h3>List of Users</h3>
+
+<div ng-controller="UserCtrl">
+  
+  <form ng-submit="addEntry()">
+    <input type="text" ng-model="newEntry.name">
+    <input type="submit" value="Add">
+  </form>
+
+  <table role="grid">
+  <tr><th scope="column">Names</th></tr>
+  <tr ng-repeat="user in entries">
+  	<td>{{user.name}}</td>
+  	<td><a href='#' ng-click="deleteUser($index)">Delete</a></td>
+  </tr>
+  </table>
+
+</div>
